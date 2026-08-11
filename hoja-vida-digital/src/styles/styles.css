@@ -1,0 +1,486 @@
+/* ==================================================
+   ESTILOS GENERALES
+   ================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   INICIO
+   ================================================== */
+
+.inicio {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.inicio-contenido {
+    max-width: 800px;
+    text-align: center;
+}
+
+.inicio-saludo {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.inicio h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.inicio h1 span {
+    font-weight: bold;
+}
+
+.inicio h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.inicio-descripcion {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 35px;
+}
+
+.inicio-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-inicio {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-secundario {
+    border: 1px solid #555;
+}
+
+
+/* ==================================================
+   CONTACTO
+   ================================================== */
+
+.contacto {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-enviar {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mensaje-formulario {
+    margin-top: 20px;
+    text-align: center;
+}
+/* ==================================================
+   PERFIL
+   ================================================== */
+
+.perfil {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.perfil-presentacion {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.seccion-subtitulo {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.perfil-presentacion h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.perfil-descripcion {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.perfil-contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.perfil-card {
+    padding: 30px;
+    border: 1px solid #555;
+    border-radius: 12px;
+}
+
+.perfil-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.perfil-card p {
+    line-height: 1.7;
+}
+
+/* =========================
+   FORMACIÓN ACADÉMICA
+========================= */
+
+.academico {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+.academico-presentacion {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.seccion-subtitulo {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.academico-presentacion h1 {
+    margin: 10px 0;
+}
+
+.academico-presentacion p {
+    line-height: 1.7;
+}
+
+.academico-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* TARJETA */
+
+.academico-card {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: start;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 35px;
+    border: 1px solid #555;
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+/* ÍCONO */
+
+.academico-icono {
+    font-size: 38px;
+    display: block;
+    padding-top: 5px;
+}
+
+/* CONTENIDO */
+
+.academico-card > div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TÍTULOS */
+
+.academico-card h2 {
+    margin: 0 0 8px;
+}
+
+.academico-card h3 {
+    margin: 0 0 20px;
+}
+
+/* DESCRIPCIÓN */
+
+.academico-card p {
+    max-width: 800px;
+    line-height: 1.7;
+    margin: 0 0 20px;
+}
+
+/* ESTADO */
+
+.academico-estado {
+    border: 1px solid #555;
+    border-radius: 25px;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+/* =========================
+   EXPERIENCIA
+========================= */
+
+.experiencia {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+.experiencia-presentacion {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.experiencia-presentacion h1 {
+    margin: 10px 0;
+}
+
+.experiencia-presentacion p {
+    line-height: 1.7;
+}
+
+.experiencia-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.experiencia-card {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: start;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 35px;
+
+    border: 1px solid #555;
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.experiencia-icono {
+    font-size: 38px;
+    display: block;
+    padding-top: 5px;
+}
+
+.experiencia-card > div {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiencia-card h2 {
+    margin: 0 0 8px;
+}
+
+.experiencia-card h3 {
+    margin: 0 0 20px;
+}
+
+.experiencia-card p {
+    max-width: 800px;
+    line-height: 1.7;
+    margin: 0 0 20px;
+}
+
+.experiencia-estado {
+    border: 1px solid #555;
+    border-radius: 25px;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+/* =========================
+   HABILIDADES
+========================= */
+
+.habilidades {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+.habilidades-presentacion {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.habilidades-presentacion h1 {
+    margin: 10px 0;
+}
+
+.habilidades-presentacion p {
+    line-height: 1.7;
+}
+
+.habilidades-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.habilidad-card {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: start;
+
+    padding: 30px;
+
+    border: 1px solid #555;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+.habilidad-icono {
+    font-size: 35px;
+}
+
+.habilidad-card h2 {
+    margin: 0 0 12px;
+}
+
+.habilidad-card p {
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+
+    .habilidades-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .habilidad-card {
+        grid-template-columns: 60px 1fr;
+    }
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+    padding: 35px 20px 25px;
+}
+
+.header h1 {
+    margin: 0 0 10px;
+}
+
+.header p {
+    margin: 6px 0;
+}
+
+.header a {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 6px 0;
+}

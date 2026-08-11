@@ -7,8 +7,8 @@ function Header() {
       </div>
 
       <div className="contacto">
-        <p>📧 correo@ejemplo.com</p>
-        <p>📱 300 000 0000</p>
+        <p>📧 caldasduquekarenlizeth@gmail.com</p>
+        <p>📱 3118231320</p>
 
         <a
           href="https://github.com/caldasduquekarenlizeth-spec"

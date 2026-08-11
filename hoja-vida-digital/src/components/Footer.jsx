@@ -1,11 +1,15 @@
 function Footer() {
-  return (
-    <footer className="footer">
-      <p>
-        © 2026 - Karen Lizeth Caldas Duque | Proyecto React - SENA
-      </p>
-    </footer>
-  );
+    return (
+        <footer>
+            <p>
+                © 2026 Hoja de Vida Digital
+            </p>
+
+            <p>
+                Desarrollado con React, Node.js y MySQL
+            </p>
+        </footer>
+    );
 }
 
 export default Footer;
