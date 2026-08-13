@@ -1,41 +1,63 @@
+import fotoKaren from "../assets/foto-karen.png";
+
 function Inicio() {
-  return (
-    <main className="inicio">
+    return (
+        <main className="inicio">
 
-      <section className="inicio-contenido">
+            <section className="inicio-contenido">
 
-        <p className="inicio-saludo">
-          ¡Hola! 👋
-        </p>
+                <div className="inicio-foto">
+                    <img
+                        src={fotoKaren}
+                        alt="Foto de Karen Lizeth Caldas Duque"
+                    />
+                </div>
 
-        <h1>
-          Soy <span>Karen Lizeth Caldas Duque</span>
-        </h1>
+                <div className="inicio-texto">
 
-        <h2>
-          Aprendiz de Análisis y Desarrollo de Software
-        </h2>
+                    <p className="inicio-saludo">
+                        Hola, soy
+                    </p>
 
-        <p className="inicio-descripcion">
-          Bienvenido a mi Hoja de Vida Digital. En este espacio podrás
-          conocer más sobre mi perfil, formación académica, experiencia,
-          habilidades y proyectos relacionados con el desarrollo de software.
-        </p>
+                    <h1>
+                        Karen Lizeth Caldas Duque
+                    </h1>
 
-        <div className="inicio-botones">
-          <a href="/perfil" className="btn-inicio">
-            Conocer mi perfil
-          </a>
+                    <h2>
+                        Aprendiz de Análisis y Desarrollo de Software
+                    </h2>
 
-          <a href="/contacto" className="btn-inicio btn-secundario">
-            Contáctame
-          </a>
-        </div>
+                    <p className="inicio-descripcion">
+                        Soy aprendiz del programa Análisis y Desarrollo
+                        de Software del SENA, interesada en el desarrollo
+                        de aplicaciones, programación, bases de datos y
+                        tecnologías web.
+                    </p>
 
-      </section>
+                    <div className="inicio-botones">
 
-    </main>
-  );
+                        <a
+                            href="/perfil"
+                            className="btn-inicio"
+                        >
+                            Conóceme
+                        </a>
+
+                        <a
+                            href="/contacto"
+                            className="btn-inicio btn-secundario"
+                        >
+                            Contáctame
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+    );
 }
 
 export default Inicio;

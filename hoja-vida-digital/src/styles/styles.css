@@ -30,22 +30,45 @@ a {
 }
 
 .inicio-contenido {
-    max-width: 800px;
-    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 60px;
+}
+
+.inicio-foto {
+    flex-shrink: 0;
+}
+
+.inicio-foto img {
+    width: 260px;
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #555;
+
+    display: block;
+}
+
+.inicio-texto {
+    max-width: 600px;
 }
 
 .inicio-saludo {
     font-size: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .inicio h1 {
     font-size: 42px;
-    margin-bottom: 15px;
-}
-
-.inicio h1 span {
-    font-weight: bold;
+    margin: 0 0 15px;
 }
 
 .inicio h2 {
@@ -57,13 +80,11 @@ a {
 .inicio-descripcion {
     font-size: 18px;
     line-height: 1.7;
-    max-width: 700px;
-    margin: 0 auto 35px;
+    margin-bottom: 35px;
 }
 
 .inicio-botones {
     display: flex;
-    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -79,7 +100,6 @@ a {
 .btn-secundario {
     border: 1px solid #555;
 }
-
 
 /* ==================================================
    CONTACTO
@@ -483,4 +503,46 @@ a {
 
 .footer p {
     margin: 6px 0;
+}
+
+/* ==================================================
+   INICIO - RESPONSIVE
+   ================================================== */
+
+@media (max-width: 700px) {
+
+    .inicio {
+        padding: 40px 20px;
+    }
+
+    .inicio-contenido {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .inicio-foto img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .inicio-texto {
+        max-width: 100%;
+    }
+
+    .inicio h1 {
+        font-size: 32px;
+    }
+
+    .inicio h2 {
+        font-size: 20px;
+    }
+
+    .inicio-descripcion {
+        font-size: 16px;
+    }
+
+    .inicio-botones {
+        justify-content: center;
+    }
 }
